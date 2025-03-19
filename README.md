@@ -1,11 +1,9 @@
 # Important
 
 This is a home assignment for CoolBet internship. The original assingment is explained below. Check out the additional Readme files in `/client`  and `/server`  for further clarification.
-This is the 'ADVANCED' version of the assignment. For a simple, straight-forward solution, check out: Github link here
+This is the 'SIMPLE' version of the assignment. For a slightly more advanced version, check out: [Betting Leaderboard Advanced](https://github.com/MattiasSimson/betting-leaderboard-advanced)
 
 Also, a video demonstration here: 
-
-
 
 # Home Assignment - Betting Leaderboard
 
