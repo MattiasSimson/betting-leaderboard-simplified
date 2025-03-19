@@ -3,7 +3,7 @@
 This is a home assignment for CoolBet internship. The original assingment is explained below. Check out the additional Readme files in `/client`  and `/server`  for further clarification.
 This is the 'SIMPLE' version of the assignment. For a slightly more advanced version, check out: [Betting Leaderboard Advanced](https://github.com/MattiasSimson/betting-leaderboard-advanced)
 
-Also, a video demonstration here: 
+Also, a video demonstration [HERE](https://www.youtube.com/watch?v=Qa6vrEtZXEo) 
 
 # Home Assignment - Betting Leaderboard
 
