@@ -1,6 +1,6 @@
-import type { DatabaseCustomer, LeaderboardCustomer } from "./types";
+import type { LeaderboardCustomer } from "./types";
 
-export async function fetchCustomers(): Promise<DatabaseCustomer[]> {
+export async function fetchCustomers(): Promise<LeaderboardCustomer[]> {
     try {
         const customers = await fetch('http://localhost:3000/customers', { method: 'GET' })
         return customers.json();
@@ -10,13 +10,11 @@ export async function fetchCustomers(): Promise<DatabaseCustomer[]> {
     }
 }
 
-export async function fetchLeaderboard(country?: string): Promise<LeaderboardCustomer[]> {
+
+export async function fetchByCountry(country: string): Promise<LeaderboardCustomer[]> {
     try {
-        const url = country 
-            ? `http://localhost:3000/leaderboard?country=${country}`
-            : 'http://localhost:3000/leaderboard';
-        const response = await fetch(url, { method: 'GET' });
-        return response.json();
+        const customers = await fetch(`http://localhost:3000/customers/country/${country}`);
+        return customers.json();
     } catch (error) {
         console.error(error);
         return [];

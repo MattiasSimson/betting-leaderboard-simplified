@@ -9,11 +9,7 @@ export interface DatabaseCustomer {
     updated_at: Date;
 }
 
-export interface LeaderboardCustomer {
-    id: string;
-    first_name: string;
-    last_name: string;
-    country: CustomerCountry;
+export interface LeaderboardCustomer extends DatabaseCustomer {
     total_bets: number;
     win_percentage: number;
     profit: number;
